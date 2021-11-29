@@ -2,66 +2,49 @@ package domain;
 
 public class CommentsInfo {
     private int count;
-    private boolean Post;
-    private String author;
-    private String dateAndTime;
-    private String textOfComment;
-    private String image;
-    private int likesCount;
+    private boolean canPost;
+    private boolean groupsCanPost;
+    private boolean Close;
+    private boolean Open;
+
 
     public int getCount() {
         return count;
-    }
-
-    public boolean isCanPost() {
-        return Post;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public String getDateAndTime() {
-        return dateAndTime;
-    }
-
-    public String getTextOfComment() {
-        return textOfComment;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public int getLikesCount() {
-        return likesCount;
     }
 
     public void setCount(int count) {
         this.count = count;
     }
 
+    public boolean isCanPost() {
+        return canPost;
+    }
+
     public void setCanPost(boolean canPost) {
-        this.Post = canPost;
+        this.canPost = canPost;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public boolean isGroupsCanPost() {
+        return groupsCanPost;
     }
 
-    public void setDateAndTime(String dateAndTime) {
-        this.dateAndTime = dateAndTime;
+    public void setGroupsCanPost(boolean groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
     }
 
-    public void setTextOfComment(String textOfComment) {
-        this.textOfComment = textOfComment;
+    public boolean isClose() {
+        return Close;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setClose(boolean close) {
+        this.Close = close;
     }
 
-    public void setLikesCount(int likesCount) {
-        this.likesCount = likesCount;
+    public boolean isOpen() {
+        return Open;
+    }
+
+    public void setOpen(boolean open) {
+        this.Open = open;
     }
 }
